@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Name"/>
     <EditText
+        android:id="@+id/ed1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your name"
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Email ID"/>
     <EditText
+        android:id="@+id/ed2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Email ID"
@@ -39,13 +41,19 @@
         android:layout_height="wrap_content"
         android:text="Mobile Number"/>
     <EditText
+        android:id="@+id/ed3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/mob"
         android:hint="Enter your mobile no:"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Usernam"/>
 
     <EditText
+        android:id="@+id/ed4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Create your username"
@@ -57,6 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Create Password"/>
     <EditText
+        android:id="@+id/ed5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Create a password"
@@ -67,6 +76,7 @@
         android:layout_height="wrap_content"
         android:text="Confirm Password"/>
     <EditText
+        android:id="@+id/ed6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm your password"
@@ -78,9 +88,11 @@
         android:layout_marginBottom="10dp"
         android:text="SIGN UP"
         android:background="#D97E62"
+        android:id="@+id/bt1"
         android:textColor="@color/white"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BACK"

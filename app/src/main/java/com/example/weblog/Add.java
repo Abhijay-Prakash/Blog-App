@@ -13,47 +13,42 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SignUp extends AppCompatActivity {
+public class Add extends AppCompatActivity {
 
-    EditText d1,d2,d3,d4,d5,d6;
+    EditText d1,d2;
     AppCompatButton b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_add);
+
         d1=(EditText) findViewById(R.id.ed1);
         d2=(EditText) findViewById(R.id.ed2);
-        d3=(EditText) findViewById(R.id.ed3);
-        d4=(EditText) findViewById(R.id.ed4);
-        d5=(EditText) findViewById(R.id.ed5);
-        d6=(EditText) findViewById(R.id.ed6);
         b1=(AppCompatButton) findViewById(R.id.bt1);
         b2=(AppCompatButton) findViewById(R.id.bt2);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             try{
-                 String s1,s2,s3,s4,s5,s6;
-                 s1=d1.getText().toString();
-                 s2=d2.getText().toString();
-                 s3=d3.getText().toString();
-                 s4=d4.getText().toString();
-                 s5=d5.getText().toString();
-                 s6=d6.getText().toString();
-                 Toast.makeText(getApplicationContext(),s1+s2+s3+s4+s5+s6,Toast.LENGTH_LONG).show();
-             }
-             catch (Exception e){
-                 Toast.makeText(getApplicationContext(),e.toString()+ " ", Toast.LENGTH_SHORT).show();
-             }
+                try{
+                    String s1,s2;
+                    s1=d1.getText().toString();
+                    s2=d2.getText().toString();
+                    Toast.makeText(getApplicationContext(),s1+s2+ " ", Toast.LENGTH_SHORT).show();
+                }
+                catch (Exception e){
+                    Toast.makeText(getApplicationContext(),e.toString() + " ", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
+
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getApplicationContext(), MainActivity.class);
+                Intent i=new Intent(getApplicationContext(), Blog.class);
                 startActivity(i);
             }
         });

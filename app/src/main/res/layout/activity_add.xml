@@ -5,52 +5,55 @@
     android:padding="70dp"
     android:background="@drawable/back"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="113dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="ADD POST"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username"/>
+        android:text="TITLE"/>
     <EditText
+        android:drawableLeft="@drawable/title"
         android:id="@+id/ed1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your username"
-        android:drawableLeft="@drawable/baseline_person_outline_24"/>
+        android:hint="Enter the title" />
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"/>
+        android:text="Description"/>
     <EditText
+        android:drawableLeft="@drawable/ds"
         android:id="@+id/ed2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        android:drawableLeft="@drawable/lock"/>
-
-
+        android:hint="Enter the description"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
-        android:background="#8483D1"
-        android:textColor="@color/white"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:text="SUBMIT"
+        android:background="#D97E62"
+        android:id="@+id/bt1"
+        android:textColor="@color/white"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:background="#D97E62"
-        android:textColor="@color/white"/>
+        android:text="BACK"
+        android:background="#9D9CCA"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+
 </LinearLayout>
